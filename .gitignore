@@ -50,3 +50,4 @@ Thumbs.db
 
 ./mcp_servers/python/clients/venv
 __pycache__
+**/.venv

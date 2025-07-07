@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "638217d5-c664-445c-a953-7da2dcc41209",
+		"_postman_id": "16e8cd22-3b77-48d2-96b0-fb7acf7f22e1",
 		"name": "MCP",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "45403895"
+		"_exporter_id": "45906135",
+		"_collection_link": "https://kanishq-5627959.postman.co/workspace/Kanishq's-Workspace~f1f0dd51-4914-4e39-897a-cf013f373c3c/collection/45906135-16e8cd22-3b77-48d2-96b0-fb7acf7f22e1?action=share&source=collection_link&creator=45906135"
 	},
 	"item": [
 		{
@@ -19,7 +20,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"WORDPRESS\": {\r\n            \"siteUrl\": \"\",\r\n            \"username\": \"\",\r\n            \"password\": \"\"\r\n        }\r\n        //  \"G_DRIVE\": {\r\n        //     \"web\": {\r\n        //         \"client_id\":\"\",\r\n        //         \"client_secret\":\"\",\r\n        //         \"refresh_token\": \"\",\r\n        //         \"access_token\": \"\"\r\n        //     }\r\n        // }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"\",\r\n        \"temperature\": 0.1,\r\n        \"max_token\":20000,\r\n        \"input\": \"use the credentials which user already provided ,on my G Drive, search for 'POA June 2025' google sheet and let me know whether available or not if available get the some data\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gemini-2.0-flash-lite\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\r\n    \"selected_servers\": [\r\n        \"WORDPRESS\"\r\n    ]\r\n}",
+									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"WORDPRESS\": {\r\n            \"siteUrl\": \"\",\r\n            \"username\": \"\",\r\n            \"password\": \"\"\r\n        }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"\",\r\n        \"temperature\": 0.1,\r\n        \"max_token\":20000,\r\n        \"input\": \"use the credentials which user already provided ,on my G Drive, search for 'POA June 2025' google sheet and let me know whether available or not if available get the some data\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gemini-2.0-flash-lite\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\r\n    \"selected_servers\": [\r\n        \"WORDPRESS\"\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -48,7 +49,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"MCP-GSUITE\": {\r\n            \"token\": \"\",\r\n            \"refresh_token\": \"\",\r\n            \"client_id\": \"\",\r\n            \"client_secret\": \"\"\r\n        }\r\n        // \"WORDPRESS\": {\r\n        //     \"siteUrl\": \"\",\r\n        //     \"username\": \"\",\r\n        //     \"password\": \"\"\r\n        // }\r\n        //  \"G_DRIVE\": {\r\n        //     \"web\": {\r\n        //         \"client_id\":\"\",\r\n        //         \"client_secret\":\"\",\r\n        //         \"refresh_token\": \"\",\r\n        //         \"access_token\": \"\"\r\n        //     }\r\n        // }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"\",\r\n        \"temperature\": 0.1,\r\n        \"max_token\": 20000,\r\n        \"input\": \"get the recent one email\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gemini-2.0-flash\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\r\n    \"selected_servers\": [\r\n        \"MCP-GSUITE\"\r\n    ]\r\n}",
+									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"MCP-GSUITE\": {\r\n            \"token\": \"\",\r\n            \"refresh_token\": \"\",\r\n            \"client_id\": \"\",\r\n            \"client_secret\": \"\"\r\n        }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"\",\r\n        \"temperature\": 0.1,\r\n        \"max_token\": 20000,\r\n        \"input\": \"get the recent one email\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gemini-2.0-flash\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\r\n    \"selected_servers\": [\r\n        \"MCP-GSUITE\"\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -77,7 +78,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"WORDPRESS\": {\r\n            \"siteUrl\": \"\",\r\n            \"username\": \"\",\r\n            \"password\": \"\"\r\n        }\r\n        //  \"G_DRIVE\": {\r\n        //     \"web\": {\r\n        //         \"client_id\":\"\",\r\n        //         \"client_secret\":\"\",\r\n        //         \"refresh_token\": \"\",\r\n        //         \"access_token\": \"\"\r\n        //     }\r\n        // }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"\",\r\n        \"temperature\": 0.1,\r\n        \"max_token\":20000,\r\n        \"input\": \"get the recent published post\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gemini-2.0-flash-lite\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\r\n    \"selected_servers\": [\r\n        \"WORDPRESS\"\r\n    ]\r\n}",
+									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"WORDPRESS\": {\r\n            \"siteUrl\": \"\",\r\n            \"username\": \"\",\r\n            \"password\": \"\"\r\n        }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"\",\r\n        \"temperature\": 0.1,\r\n        \"max_token\":20000,\r\n        \"input\": \"get the recent published post\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gemini-2.0-flash-lite\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\r\n    \"selected_servers\": [\r\n        \"WORDPRESS\"\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -111,7 +112,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"WORDPRESS\": {\r\n            \"siteUrl\": \"\",\r\n            \"username\": \"\",\r\n            \"password\": \"\"\r\n        }\r\n        //  \"G_DRIVE\": {\r\n        //     \"web\": {\r\n        //         \"client_id\":\"\",\r\n        //         \"client_secret\":\"\",\r\n        //         \"refresh_token\": \"\",\r\n        //         \"access_token\": \"\"\r\n        //     }\r\n        // }\r\n    },\r\n    \"client_details\": {\r\n        \"endpoint\": \"\",\r\n        \"deployment_id\": \"gpt-4o\",\r\n        \"api_version\": \"\",\r\n        \"api_key\": \"\",\r\n        \"temperature\": 0.1,\r\n        \"input\": \"create a category 'Grocery'\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gpt-4o\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_AZURE_AI\",\r\n    \"selected_servers\": [\r\n        \"WORDPRESS\"\r\n    ]\r\n}",
+									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"WORDPRESS\": {\r\n            \"siteUrl\": \"\",\r\n            \"username\": \"\",\r\n            \"password\": \"\"\r\n        }\r\n    },\r\n    \"client_details\": {\r\n        \"endpoint\": \"\",\r\n        \"deployment_id\": \"gpt-4o\",\r\n        \"api_version\": \"\",\r\n        \"api_key\": \"\",\r\n        \"temperature\": 0.1,\r\n        \"input\": \"create a category 'Grocery'\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gpt-4o\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_AZURE_AI\",\r\n    \"selected_servers\": [\r\n        \"WORDPRESS\"\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -140,7 +141,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"WORDPRESS\": {\r\n            \"siteUrl\": \"\",\r\n            \"username\": \"\",\r\n            \"password\": \"\"\r\n        }\r\n        //  \"G_DRIVE\": {\r\n        //     \"web\": {\r\n        //         \"client_id\":\"\",\r\n        //         \"client_secret\":\"\",\r\n        //         \"refresh_token\": \"\",\r\n        //         \"access_token\": \"\"\r\n        //     }\r\n        // }\r\n    },\r\n    \"client_details\": {\r\n        \"endpoint\": \"\",\r\n        \"deployment_id\": \"gpt-4o\",\r\n        \"api_version\": \"\",\r\n        \"api_key\": \"\",\r\n        \"temperature\": 0.1,\r\n        \"input\": \"get the recent once email\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gpt-4o\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_AZURE_AI\",\r\n    \"selected_servers\": [\r\n        \"MCP-GSUITE\"\r\n    ]\r\n}",
+									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"WORDPRESS\": {\r\n            \"siteUrl\": \"\",\r\n            \"username\": \"\",\r\n            \"password\": \"\"\r\n        }\r\n    },\r\n    \"client_details\": {\r\n        \"endpoint\": \"\",\r\n        \"deployment_id\": \"gpt-4o\",\r\n        \"api_version\": \"\",\r\n        \"api_key\": \"\",\r\n        \"temperature\": 0.1,\r\n        \"input\": \"get the recent once email\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gpt-4o\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_AZURE_AI\",\r\n    \"selected_servers\": [\r\n        \"MCP-GSUITE\"\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -211,7 +212,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{dev-js-host}}/api/v1/mcp/process_message",
+									"raw": "{{dev-js-host}}/api/v1/mcp/process_.message",
 									"host": [
 										"{{dev-js-host}}"
 									],
@@ -232,7 +233,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"MCP-GSUITE\": {\r\n            \"token\": \"\",\r\n            \"refresh_token\": \"\",\r\n            \"client_id\": \"\",\r\n            \"client_secret\": \"\"\r\n        }\r\n        // \"WORDPRESS\": {\r\n        //     \"siteUrl\": \"\",\r\n        //     \"username\": \"\",\r\n        //     \"password\": \"\"\r\n        // }\r\n        //  \"G_DRIVE\": {\r\n        //     \"web\": {\r\n        //         \"client_id\":\"\",\r\n        //         \"client_secret\":\"\",\r\n        //         \"refresh_token\": \"\",\r\n        //         \"access_token\": \"\"\r\n        //     }\r\n        // }\r\n    },\r\n    \"client_details\":{\r\n        \"api_key\": \"XkSQ0wdBTaZkxlvEEbQBxOAlPK1LhNL_XrcVtgA\",\r\n        \"temperature\": 0.1,\r\n        \"input\": \"get the recent email\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gpt-4o\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_OPENAI\",\r\n    \"selected_servers\": [\r\n        \"MCP-GSUITE\"\r\n    ]\r\n}",
+									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"MCP-GSUITE\": {\r\n            \"token\": \"\",\r\n            \"refresh_token\": \"\",\r\n            \"client_id\": \"\",\r\n            \"client_secret\": \"\"\r\n        }\r\n    },\r\n    \"client_details\":{\r\n        \"api_key\": \"XkSQ0wdBTaZkxlvEEbQBxOAlPK1LhNL_XrcVtgA\",\r\n        \"temperature\": 0.1,\r\n        \"input\": \"get the recent email\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gpt-4o\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_OPENAI\",\r\n    \"selected_servers\": [\r\n        \"MCP-GSUITE\"\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -261,7 +262,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"WORDPRESS\": {\r\n            \"siteUrl\": \"\",\r\n            \"username\": \"\",\r\n            \"password\": \"\"\r\n        }\r\n        //  \"G_DRIVE\": {\r\n        //     \"web\": {\r\n        //         \"client_id\":\"\",\r\n        //         \"client_secret\":\"\",\r\n        //         \"refresh_token\": \"\",\r\n        //         \"access_token\": \"\"\r\n        //     }\r\n        // }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"\",\r\n        \"temperature\": 0.1,\r\n        \"input\": \"Hii\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gpt-4o\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_OPENAI\",\r\n    \"selected_servers\": [\r\n        \"WORDPRESS\"\r\n    ]\r\n}",
+									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"WORDPRESS\": {\r\n            \"siteUrl\": \"\",\r\n            \"username\": \"\",\r\n            \"password\": \"\"\r\n        }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"\",\r\n        \"temperature\": 0.1,\r\n        \"input\": \"Hii\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gpt-4o\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_OPENAI\",\r\n    \"selected_servers\": [\r\n        \"WORDPRESS\"\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -278,6 +279,74 @@
 										"v1",
 										"mcp",
 										"process_message_stream"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "MYSQL MCP",
+					"item": [
+						{
+							"name": "Non-Stream Api -python",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"MYSQL_MCP_SERVER\": {\r\n            \"host\": \"\",\r\n            \"port\": \"\",\r\n            \"user\": \"root\",\r\n            \"password\": \"root\",\r\n            \"database\":\"test_db\"\r\n        }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"AIzaSyCJJFu0VJ_odeC8i-TVsQLiyg9f0J1xpsw\",\r\n        \"temperature\": 0.6,\r\n        \"max_token\": 20000,\r\n        \"input\": \"get me names of all tables\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gemini-2.0-flash\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\r\n    \"selected_servers\": [\r\n        \"MYSQL_MCP_SERVER\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev-python-host}}/api/v1/mcp/process_message",
+									"host": [
+										"{{dev-python-host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mcp",
+										"process_message"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AIVEN MCP",
+					"item": [
+						{
+							"name": "Non-Stream Api -python",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"AIVEN_MCP_SERVER\": {\r\n            \"AIVEN_TOKEN\": \"avnpat_xxxxxxxxxxxxxxxxxxxx\",\r\n            \"AIVEN_BASE_URL\": \"https://api.aiven.io\"\r\n        }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"AIzaSyCJJFu0VJ_odeC8i-TVsQLiyg9f0J1xpsw\",\r\n        \"temperature\": 0.6,\r\n        \"max_token\": 20000,\r\n        \"input\": \"list all projects\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gemini-2.0-flash\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\r\n    \"selected_servers\": [\r\n        \"AIVEN_MCP_SERVER\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev-python-host}}/api/v1/mcp/process_message",
+									"host": [
+										"{{dev-python-host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mcp",
+										"process_message"
 									]
 								}
 							},

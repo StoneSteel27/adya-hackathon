@@ -7,3 +7,4 @@ openpyxl
 requests                        
 asyncio
 uv
+mysql-connector-python>=9.1.0

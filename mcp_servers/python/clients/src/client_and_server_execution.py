@@ -915,6 +915,12 @@ async def call_and_execute_tool(
         case "FACEBOOK_ADS_MCP":
             args["__credentials__"]   = creds
             args["server_credentials"] = creds
+        case "MYSQL_MCP_SERVER":
+            args["__credentials__"]   = creds
+            args["server_credentials"] = creds
+        case "AIVEN_MCP_SERVER":
+            args["__credentials__"]   = creds
+            args["server_credentials"] = creds
         case _:
             pass
 
