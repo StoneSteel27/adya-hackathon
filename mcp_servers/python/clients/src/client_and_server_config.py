@@ -5,16 +5,6 @@ ClientsConfig =[
 ]
 ServersConfig = [
 	{
-		"server_name": "MCP-GSUITE",
-		"command":"uv",
-		"args": [
-			"--directory",
-			"../servers/MCP-GSUITE/mcp-gsuite",
-			"run",
-			"mcp-gsuite"
-		]
-	},
-	{
 		"server_name": "MYSQL_MCP_SERVER",
 		"command":"uv",
 		"args": [

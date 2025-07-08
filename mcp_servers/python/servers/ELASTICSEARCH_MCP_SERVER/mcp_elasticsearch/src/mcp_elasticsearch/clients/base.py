@@ -5,7 +5,6 @@ from typing import Dict
 
 from elasticsearch import Elasticsearch
 import httpx
-from opensearchpy import OpenSearch
 
 class SearchClientBase(ABC):
     def __init__(self, config: Dict, engine_type: str):
@@ -14,7 +13,7 @@ class SearchClientBase(ABC):
         
         Args:
             config: Configuration dictionary with connection parameters
-            engine_type: Type of search engine to use ("elasticsearch" or "opensearch")
+            engine_type: Type of search engine to use ("elasticsearch")
         """
         self.logger = logging.getLogger()
         self.config = config
@@ -44,14 +43,6 @@ class SearchClientBase(ABC):
                 verify_certs=verify_certs
             )
             self.logger.info(f"Elasticsearch client initialized with hosts: {hosts}")
-        elif engine_type == "opensearch":
-            # Assuming OpenSearch might still use http_auth, but removing direct user/pass from here
-            self.client = OpenSearch(
-                hosts=hosts,
-                http_auth=api_key, # OpenSearch might use API key in http_auth
-                verify_certs=verify_certs
-            )
-            self.logger.info(f"OpenSearch client initialized with hosts: {hosts}")
         else:
             raise ValueError(f"Unsupported engine type: {engine_type}")
 

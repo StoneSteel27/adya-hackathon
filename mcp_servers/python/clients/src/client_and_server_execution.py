@@ -906,9 +906,6 @@ async def call_and_execute_tool(
 
     # switch/case for injecting creds (Python 3.10+)
     match selected_server:
-        case "MCP-GSUITE":
-            args["__credentials__"]   = creds
-            args["server_credentials"] = creds
         case "FACEBOOK_MCP":
             args["__credentials__"]   = creds
             args["server_credentials"] = creds
