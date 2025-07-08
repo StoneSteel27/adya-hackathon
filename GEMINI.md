@@ -1,1 +1,0 @@
-Always go into a new branch before starting on a project. once you get approval of "YES" you can merge to the main branch

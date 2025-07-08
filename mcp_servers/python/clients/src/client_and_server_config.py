@@ -33,5 +33,15 @@ ServersConfig = [
 			"run",
 			"mcp-aiven"
 		]
+	},
+	{
+		"server_name": "ELASTICSEARCH_MCP_SERVER",
+		"command": "uv",
+		"args": [
+			"--directory",
+			"../servers/ELASTICSEARCH_MCP_SERVER/mcp_elasticsearch",
+			"run",
+			"mcp-elasticsearch"
+		]
 	}
 ]

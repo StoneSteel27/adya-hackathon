@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "16e8cd22-3b77-48d2-96b0-fb7acf7f22e1",
+		"_postman_id": "5bb4831c-f7b9-49dc-baac-ff02757c1bb3",
 		"name": "MCP",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "45906135",
-		"_collection_link": "https://kanishq-5627959.postman.co/workspace/Kanishq's-Workspace~f1f0dd51-4914-4e39-897a-cf013f373c3c/collection/45906135-16e8cd22-3b77-48d2-96b0-fb7acf7f22e1?action=share&source=collection_link&creator=45906135"
+		"_collection_link": "https://kanishq-5627959.postman.co/workspace/Kanishq's-Workspace~f1f0dd51-4914-4e39-897a-cf013f373c3c/collection/45906135-5bb4831c-f7b9-49dc-baac-ff02757c1bb3?action=share&source=collection_link&creator=45906135"
 	},
 	"item": [
 		{
@@ -212,7 +212,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{dev-js-host}}/api/v1/mcp/process_.message",
+									"raw": "{{dev-js-host}}/api/v1/mcp/process_message",
 									"host": [
 										"{{dev-js-host}}"
 									],
@@ -331,6 +331,40 @@
 								"body": {
 									"mode": "raw",
 									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"AIVEN_MCP_SERVER\": {\r\n            \"AIVEN_TOKEN\": \"avnpat_xxxxxxxxxxxxxxxxxxxx\",\r\n            \"AIVEN_BASE_URL\": \"https://api.aiven.io\"\r\n        }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"AIzaSyCJJFu0VJ_odeC8i-TVsQLiyg9f0J1xpsw\",\r\n        \"temperature\": 0.6,\r\n        \"max_token\": 20000,\r\n        \"input\": \"list all projects\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gemini-2.0-flash\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\r\n    \"selected_servers\": [\r\n        \"AIVEN_MCP_SERVER\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev-python-host}}/api/v1/mcp/process_message",
+									"host": [
+										"{{dev-python-host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mcp",
+										"process_message"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ELASTICSEARCH MCP",
+					"item": [
+						{
+							"name": "Non-Stream Api -python",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"selected_server_credentials\": {\n        \"ELASTICSEARCH_MCP_SERVER\": {\n            \"ES_URL\": \"your_elasticsearch_url\",\n            \"ES_API_KEY\": \"your_api_key\"\n        }\n    },\n    \"client_details\": {\n        \"api_key\": \"AIzaSyCJJFu0VJ_odeC8i-TVsQLiyg9f0J1xpsw\",\n        \"temperature\": 0.6,\n        \"max_token\": 20000,\n        \"input\": \"get cluster health\",\n        \"input_type\": \"text\",\n        \"prompt\": \"you are a helpful assistant\",\n        \"chat_model\": \"gemini-2.0-flash\",\n        \"chat_history\": [\n            {\n                \"role\": \"user\",\n                \"content\": \"Hii\"\n            }\n        ]\n    },\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\n    \"selected_servers\": [\n        \"ELASTICSEARCH_MCP_SERVER\"\n    ]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
