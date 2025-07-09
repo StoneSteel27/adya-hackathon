@@ -1,3 +1,4 @@
+```markdown
 # MySQL MCP Server Overview
 
 ## What is the MySQL MCP Server?
@@ -37,3 +38,4 @@ The MySQL MCP Server allows you to interact with a MySQL database. You can execu
 - Integrating a MySQL database with other systems.
 - Building custom applications that use a MySQL database.
 - Automating database tasks.
+```
