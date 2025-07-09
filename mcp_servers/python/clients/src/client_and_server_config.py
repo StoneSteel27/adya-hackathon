@@ -43,5 +43,15 @@ ServersConfig = [
 			"run",
 			"pandas-mcp-server"
 		]
+	},
+	{
+		"server_name": "DISCORD_MCP_SERVER",
+		"command":"uv",
+		"args": [
+			"--directory",
+			"../servers/DISCORD_MCP_SERVER/mcp_discord",
+			"run",
+			"mcp-discord"
+		]
 	}
 ]

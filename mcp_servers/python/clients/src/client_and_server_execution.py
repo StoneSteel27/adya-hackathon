@@ -924,6 +924,9 @@ async def call_and_execute_tool(
         case "PANDAS_MCP_SERVER":
             args["__credentials__"]   = creds
             args["server_credentials"] = creds
+        case "DISCORD_MCP_SERVER":
+            args["__credentials__"]   = creds
+            args["server_credentials"] = creds
         case _:
             pass
 
