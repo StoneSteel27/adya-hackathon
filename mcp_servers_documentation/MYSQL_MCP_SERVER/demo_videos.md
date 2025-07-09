@@ -1,12 +1,11 @@
 # MySQL MCP Server – Demos and Payload Examples
 
 ## 🎥 Demo Video
-- **MCP server setup explanation + API Execution + Features Testing**: [Watch Here](https://your-demo-video-link.com)
-
+- **MCP server setup explanation + API Execution + Features Testing**: [Watch Here](https://youtu.be/6uDL-SVuTLo)
 ---
 
 ## 🎥 Credentials Gathering Video
-- **Gathering Credentials & Setup (Full end-to-end video)**: [Watch Here](https://your-credentials-video-link.com)
+- **Gathering Credentials & Setup (Full end-to-end video)**: [Watch Here](https://youtu.be/bO-m1HcI4WM)
 
 ---
 
