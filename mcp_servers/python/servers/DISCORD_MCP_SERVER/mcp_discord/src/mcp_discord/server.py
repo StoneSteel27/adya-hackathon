@@ -214,20 +214,7 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
                 if not category:
                     raise ValueError(f"Category '{category_name}' not found.")
 
-            overwrites = {
-                # Ensure the bot can always manage the channel
-                bot_member: discord.PermissionOverwrite(read_messages=True, manage_channels=True, manage_permissions=True)
-            }
-            if visible_to_roles:
-                overwrites[guild.default_role] = discord.PermissionOverwrite(read_messages=False)
-                for role_name in visible_to_roles:
-                    role = utils.get_role_by_name(role_name, all_roles)
-                    if role:
-                        overwrites[role] = discord.PermissionOverwrite(read_messages=True)
-                    else:
-                        logger.warning(f"Role '{role_name}' not found in guild '{guild.name}'.")
-
-            new_channel = await guild.create_text_channel(name=channel_name, category=category, overwrites=overwrites)
+            new_channel = await guild.create_text_channel(name=channel_name, category=category)
             if not new_channel:
                 raise RuntimeError(f"Failed to create text channel '{channel_name}'. This may be due to a permission issue.")
             result_text = f"Successfully created text channel '{new_channel.name}' with ID {new_channel.id}."
