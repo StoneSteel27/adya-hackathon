@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "5bb4831c-f7b9-49dc-baac-ff02757c1bb3",
+		"_postman_id": "964f89b7-589a-4724-8710-3dfa68eae2e4",
 		"name": "MCP",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "45906135",
-		"_collection_link": "https://kanishq-5627959.postman.co/workspace/Kanishq's-Workspace~f1f0dd51-4914-4e39-897a-cf013f373c3c/collection/45906135-5bb4831c-f7b9-49dc-baac-ff02757c1bb3?action=share&source=collection_link&creator=45906135"
+		"_collection_link": "https://kanishq-5627959.postman.co/workspace/Kanishq's-Workspace~f1f0dd51-4914-4e39-897a-cf013f373c3c/collection/45906135-964f89b7-589a-4724-8710-3dfa68eae2e4?action=share&source=collection_link&creator=45906135"
 	},
 	"item": [
 		{
@@ -358,7 +358,94 @@
 					"name": "ELASTICSEARCH MCP",
 					"item": [
 						{
-							"name": "Non-Stream Api -python",
+							"name": "get_cluster_health",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"selected_server_credentials\": {\n        \"ELASTICSEARCH_MCP_SERVER\": {\n            \"ES_URL\": \"https://9167c091de0348d4b98805dfe5eb3135.us-central1.gcp.cloud.es.io:443\",\n            \"ES_API_KEY\": \"UC11YzdwY0I4dXBnTlJadXZYUTc6VWh4MndlSUU4ek5DdHdhSU1OX0RyZw==\"\n        }\n    },\n    \"client_details\": {\n        \"api_key\": \"AIzaSyCJJFu0VJ_odeC8i-TVsQLiyg9f0J1xpsw\",\n        \"temperature\": 0.6,\n        \"max_token\": 20000,\n        \"input\": \"provide me details of cluster's health\",\n        \"input_type\": \"text\",\n        \"prompt\": \"you are a helpful assistant\",\n        \"chat_model\": \"gemini-2.5-flash\",\n        \"chat_history\": [\n            {\n                \"role\": \"user\",\n                \"content\": \"Hii\"\n            }\n        ]\n    },\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\n    \"selected_servers\": [\n        \"ELASTICSEARCH_MCP_SERVER\"\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev-python-host}}/api/v1/mcp/process_message",
+									"host": [
+										"{{dev-python-host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mcp",
+										"process_message"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create_index",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"selected_server_credentials\": {\n        \"ELASTICSEARCH_MCP_SERVER\": {\n            \"ES_URL\": \"https://9167c091de0348d4b98805dfe5eb3135.us-central1.gcp.cloud.es.io:443\",\n            \"ES_API_KEY\": \"UC11YzdwY0I4dXBnTlJadXZYUTc6VWh4MndlSUU4ek5DdHdhSU1OX0RyZw\"\n        }\n    },\n    \"client_details\": {\n        \"api_key\": \"AIzaSyCJJFu0VJ_odeC8i-TVsQLiyg9f0J1xpsw\",\n        \"temperature\": 0.6,\n        \"max_token\": 20000,\n        \"input\": \"create a index named historical_stories, and tell me whether it was successfully created\",\n        \"input_type\": \"text\",\n        \"prompt\": \"you are a helpful assistant\",\n        \"chat_model\": \"gemini-2.5-flash\",\n        \"chat_history\": [\n            {\n                \"role\": \"user\",\n                \"content\": \"Hii\"\n            }\n        ]\n    },\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\n    \"selected_servers\": [\n        \"ELASTICSEARCH_MCP_SERVER\"\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev-python-host}}/api/v1/mcp/process_message",
+									"host": [
+										"{{dev-python-host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mcp",
+										"process_message"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "index_document",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"selected_server_credentials\": {\n        \"ELASTICSEARCH_MCP_SERVER\": {\n            \"ES_URL\": \"https://9167c091de0348d4b98805dfe5eb3135.us-central1.gcp.cloud.es.io:443\",\n            \"ES_API_KEY\": \"UC11YzdwY0I4dXBnTlJadXZYUTc6VWh4MndlSUU4ek5DdHdhSU1OX0RyZw\"\n        }\n    },\n    \"client_details\": {\n        \"api_key\": \"AIzaSyCJJFu0VJ_odeC8i-TVsQLiyg9f0J1xpsw\",\n        \"temperature\": 0.6,\n        \"max_token\": 20000,\n        \"input\": \"index the following documents into the historical_stories index: The fall of the Berlin Wall on November 9, 1989, marked a pivotal moment in world history, symbolizing the end of the Cold War and the collapse of communist power in Eastern Europe. For decades, the wall had stood as a stark physical and ideological divider between East and West Berlin. Its sudden dismantling, spurred by a wave of popular protests and a mistaken announcement by an East German official, unleashed a torrent of emotion as families and friends, separated for nearly thirty years, were finally reunited. The event not only redrew the political map of Europe but also paved the way for German reunification. The discovery of the Rosetta Stone in 1799 by French soldiers in Egypt was a watershed event for the field of Egyptology. The stone featured the same text inscribed in three different scripts: Ancient Greek, Demotic, and Egyptian hieroglyphs. This trilingual inscription provided the key for scholars like Jean-François Champollion to finally decipher the hieroglyphic script, which had been a mystery for centuries. By unlocking the language of the ancient Egyptians, the Rosetta Stone opened up a direct window into their civilization, allowing historians to read their stories, laws, and beliefs for the first time. The Industrial Revolution, which began in Great Britain in the late 18th century, was a period of profound technological and social change. Innovations like the steam engine, the power loom, and the spinning jenny transformed manufacturing processes, leading to the rise of the factory system and mass production. This shift caused a massive migration of populations from rural areas to burgeoning urban centers, creating new social classes and economic structures. While it brought unprecedented economic growth, it also introduced significant challenges, including poor working conditions, urban overcrowding, and social inequality. The Silk Road was not a single road but a vast network of trade routes that connected the East and West for more than 1,500 years. Stretching from China to the Mediterranean Sea, it was the primary conduit for the exchange of goods, ideas, and cultures between vastly different civilizations. Luxury goods like silk, spices, and precious metals traveled westward, while commodities like wool, glass, and silver flowed east. More importantly, the Silk Road facilitated the spread of religions like Buddhism and Christianity, as well as scientific and artistic innovations, fundamentally shaping the development of societies across Eurasia. The Space Race of the mid-20th century was a dramatic technological and ideological competition between the United States and the Soviet Union. Kicked off by the Soviet launch of the Sputnik 1 satellite in 1957, the rivalry spurred rapid advancements in rocketry, materials science, and computer technology. Key milestones included the first human in space, Yuri Gagarin (USSR), and the first human on the Moon, Neil Armstrong (USA). The race was a powerful proxy for the Cold War, with each achievement serving as a demonstration of national superiority and a testament to the incredible scientific progress driven by intense competition.\\n\\n once indexed successfull, please say so\",\n        \"input_type\": \"text\",\n        \"prompt\": \"you are a helpful assistant\",\n        \"chat_model\": \"gemini-2.5-flash\",\n        \"chat_history\": [\n            {\n                \"role\": \"user\",\n                \"content\": \"Hii\"\n            }\n        ]\n    },\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\n    \"selected_servers\": [\n        \"ELASTICSEARCH_MCP_SERVER\"\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev-python-host}}/api/v1/mcp/process_message",
+									"host": [
+										"{{dev-python-host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mcp",
+										"process_message"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "search_documents",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -420,43 +507,43 @@
 							},
 							"response": []
 						}
-                    ]
-                },
-                {
-                    "name": "DISCORD MCP",
-                    "item": [
-                        {
-                            "name": "Non-Stream Api -python",
-                            "request": {
-                                "method": "POST",
-                                "header": [],
-                                "body": {
-                                    "mode": "raw",
-                                    "raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"DISCORD_MCP_SERVER\": {\r\n            \"api_key\": \"YOUR_DISCORD_BOT_TOKEN\",\r\n            \"guild_id\": \"YOUR_SERVER_ID\"\r\n        }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"AIzaSyCJJFu0VJ_odeC8i-TVsQLiyg9f0J1xpsw\",\r\n        \"temperature\": 0.6,\r\n        \"max_token\": 20000,\r\n        \"input\": \"create a text channel named general\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gemini-2.0-flash\",\r\n        \"chat_history\": []\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\r\n    \"selected_servers\": [\r\n        \"DISCORD_MCP_SERVER\"\r\n    ]\r\n}",
-                                    "options": {
-                                        "raw": {
-                                            "language": "json"
-                                        }
-                                    }
-                                },
-                                "url": {
-                                    "raw": "{{dev-python-host}}/api/v1/mcp/process_message",
-                                    "host": [
-                                        "{{dev-python-host}}"
-                                    ],
-                                    "path": [
-                                        "api",
-                                        "v1",
-                                        "mcp",
-                                        "process_message"
-                                    ]
-                                }
-                            },
-                            "response": []
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+					]
+				},
+				{
+					"name": "DISCORD MCP",
+					"item": [
+						{
+							"name": "Non-Stream Api -python",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"DISCORD_MCP_SERVER\": {\r\n            \"api_key\": \"YOUR_DISCORD_BOT_TOKEN\",\r\n            \"guild_id\": \"YOUR_SERVER_ID\"\r\n        }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"AIzaSyCJJFu0VJ_odeC8i-TVsQLiyg9f0J1xpsw\",\r\n        \"temperature\": 0.6,\r\n        \"max_token\": 20000,\r\n        \"input\": \"create a text channel named general\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gemini-2.0-flash\",\r\n        \"chat_history\": []\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\r\n    \"selected_servers\": [\r\n        \"DISCORD_MCP_SERVER\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev-python-host}}/api/v1/mcp/process_message",
+									"host": [
+										"{{dev-python-host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mcp",
+										"process_message"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
 }
