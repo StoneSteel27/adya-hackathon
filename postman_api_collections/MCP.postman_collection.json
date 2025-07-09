@@ -324,13 +324,71 @@
 					"name": "AIVEN MCP",
 					"item": [
 						{
-							"name": "Non-Stream Api -python",
+							"name": "list_projects",
 							"request": {
 								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"AIVEN_MCP_SERVER\": {\r\n            \"AIVEN_TOKEN\": \"avnpat_xxxxxxxxxxxxxxxxxxxx\",\r\n            \"AIVEN_BASE_URL\": \"https://api.aiven.io\"\r\n        }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"AIzaSyCJJFu0VJ_odeC8i-TVsQLiyg9f0J1xpsw\",\r\n        \"temperature\": 0.6,\r\n        \"max_token\": 20000,\r\n        \"input\": \"list all projects\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gemini-2.0-flash\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\r\n    \"selected_servers\": [\r\n        \"AIVEN_MCP_SERVER\"\r\n    ]\r\n}",
+									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"AIVEN_MCP_SERVER\": {\r\n            \"AIVEN_TOKEN\": \"TEVXVN1kC1dm2762cTrfpoEcX4KKqcH4M1q6V8UjJysxRvJHkrSkeRZ44KLWdM6Sj62pjYTcM9we3kC8MYRhiuX51K0EIsGNOGv93DdtRGVirquOiDQjq4bqNe1+DAA0jnty+ZhrWtnkpzy4kkk35r9STAPfMS7nLM/QRHGthUVkD4Tq0EHLoB61bjm2n8gYwtY+AGB94HfS8usddSG94Nb1N27xCvd9Qq/YEkYXlrKdg9G+uEqgdaQFS9u4EfvQkoCDeaDqqB3arfGa1mbcvSi3JNu8/JqI/ls+loaLNv2qViEm3JPoCW1PR8RaebLm4n7xjV7sEnDu774ivmy7XU8zxMq/rdfRPQ+uqKKuU1dY/0M=\",\r\n            \"AIVEN_BASE_URL\": \"https://api.aiven.io\"\r\n        }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"AIzaSyCJJFu0VJ_odeC8i-TVsQLiyg9f0J1xpsw\",\r\n        \"temperature\": 0.6,\r\n        \"max_token\": 20000,\r\n        \"input\": \"get me a list all projects names in aiven\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gemini-2.5-flash\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\r\n    \"selected_servers\": [\r\n        \"AIVEN_MCP_SERVER\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev-python-host}}/api/v1/mcp/process_message",
+									"host": [
+										"{{dev-python-host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mcp",
+										"process_message"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "list_services",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"AIVEN_MCP_SERVER\": {\r\n            \"AIVEN_TOKEN\": \"TEVXVN1kC1dm2762cTrfpoEcX4KKqcH4M1q6V8UjJysxRvJHkrSkeRZ44KLWdM6Sj62pjYTcM9we3kC8MYRhiuX51K0EIsGNOGv93DdtRGVirquOiDQjq4bqNe1+DAA0jnty+ZhrWtnkpzy4kkk35r9STAPfMS7nLM/QRHGthUVkD4Tq0EHLoB61bjm2n8gYwtY+AGB94HfS8usddSG94Nb1N27xCvd9Qq/YEkYXlrKdg9G+uEqgdaQFS9u4EfvQkoCDeaDqqB3arfGa1mbcvSi3JNu8/JqI/ls+loaLNv2qViEm3JPoCW1PR8RaebLm4n7xjV7sEnDu774ivmy7XU8zxMq/rdfRPQ+uqKKuU1dY/0M=\",\r\n            \"AIVEN_BASE_URL\": \"https://api.aiven.io\"\r\n        }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"AIzaSyCJJFu0VJ_odeC8i-TVsQLiyg9f0J1xpsw\",\r\n        \"temperature\": 0.6,\r\n        \"max_token\": 20000,\r\n        \"input\": \"get me a list of all service names in aiven project `kanishqv18-9da3`\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gemini-2.5-flash\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\r\n    \"selected_servers\": [\r\n        \"AIVEN_MCP_SERVER\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev-python-host}}/api/v1/mcp/process_message",
+									"host": [
+										"{{dev-python-host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mcp",
+										"process_message"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get_service_details",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"selected_server_credentials\": {\r\n        \"AIVEN_MCP_SERVER\": {\r\n            \"AIVEN_TOKEN\": \"TEVXVN1kC1dm2762cTrfpoEcX4KKqcH4M1q6V8UjJysxRvJHkrSkeRZ44KLWdM6Sj62pjYTcM9we3kC8MYRhiuX51K0EIsGNOGv93DdtRGVirquOiDQjq4bqNe1+DAA0jnty+ZhrWtnkpzy4kkk35r9STAPfMS7nLM/QRHGthUVkD4Tq0EHLoB61bjm2n8gYwtY+AGB94HfS8usddSG94Nb1N27xCvd9Qq/YEkYXlrKdg9G+uEqgdaQFS9u4EfvQkoCDeaDqqB3arfGa1mbcvSi3JNu8/JqI/ls+loaLNv2qViEm3JPoCW1PR8RaebLm4n7xjV7sEnDu774ivmy7XU8zxMq/rdfRPQ+uqKKuU1dY/0M=\",\r\n            \"AIVEN_BASE_URL\": \"https://api.aiven.io\"\r\n        }\r\n    },\r\n    \"client_details\": {\r\n        \"api_key\": \"AIzaSyCJJFu0VJ_odeC8i-TVsQLiyg9f0J1xpsw\",\r\n        \"temperature\": 0.6,\r\n        \"max_token\": 20000,\r\n        \"input\": \"provide me information on service `mysql-1adfcc91` in the project `kanishqv18-9da3`\",\r\n        \"input_type\": \"text\",\r\n        \"prompt\": \"you are a helpful assistant\",\r\n        \"chat_model\": \"gemini-2.5-flash\",\r\n        \"chat_history\": [\r\n            {\r\n                \"role\": \"user\",\r\n                \"content\": \"Hii\"\r\n            }\r\n        ]\r\n    },\r\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\r\n    \"selected_servers\": [\r\n        \"AIVEN_MCP_SERVER\"\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
