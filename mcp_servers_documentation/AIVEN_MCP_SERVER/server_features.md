@@ -1,4 +1,4 @@
-```
+```markdown
 # Aiven MCP Server Overview
 
 ## What is the Aiven MCP Server?
