@@ -1,3 +1,4 @@
+```markdown
 # Discord MCP Server Overview
 
 ## What is the Discord MCP Server?
@@ -37,3 +38,4 @@ The Discord MCP Server allows you to manage a Discord server programmatically. Y
 - Automating the setup of new Discord servers.
 - Creating custom bots with advanced moderation capabilities.
 - Integrating Discord with other platforms, such as a CRM or a project management tool.
+```
