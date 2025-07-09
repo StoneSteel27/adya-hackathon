@@ -1,3 +1,4 @@
+```markdown
 # Elasticsearch MCP Server Features
 
 The Elasticsearch MCP Server provides a comprehensive set of tools to manage and interact with your Elasticsearch cluster.
@@ -24,3 +25,4 @@ The Elasticsearch MCP Server provides a comprehensive set of tools to manage and
 - **Delete Alias**: Delete an alias.
 - **Get Alias**: Retrieve information about one or more aliases.
 - **List Aliases**: List all aliases in the cluster.
+```
