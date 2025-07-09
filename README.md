@@ -1,6 +1,6 @@
-# Adya Hackathon Project
+# The Crucible's Adya Hackathon Repository
 
-This project contains a collection of MCP (Multi-Cloud Platform) servers that can be used to interact with various services.
+This project contains a collection of MCP servers that can be used to interact with various services.
 
 ## Python Servers
 
@@ -38,3 +38,9 @@ To run the Python client, navigate to the `mcp_servers/python/clients` directory
     ```bash
     python run.py
     ```
+
+### Memebers in Team "The Crucible"
+- Kanishq V (Leader)
+- Lohith Varun R
+- Harish G
+- Sharan B
