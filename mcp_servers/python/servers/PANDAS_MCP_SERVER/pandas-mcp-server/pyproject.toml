@@ -1,0 +1,21 @@
+[project]
+name = "pandas-mcp-server"
+version = "0.1.0"
+description = "An MCP server for Pandas."
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.3.0",
+    "python-dotenv>=1.0.1",
+    "uvicorn>=0.34.0",
+    "pandas>=2.0.0",
+]
+
+[project.scripts]
+pandas-mcp-server = "pandas_mcp_server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pandas_mcp_server"]
