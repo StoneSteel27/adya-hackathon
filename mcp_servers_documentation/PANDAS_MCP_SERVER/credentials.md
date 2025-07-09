@@ -1,8 +1,7 @@
 # Pandas MCP Server Credentials
 
 ## Overview
-This document provides instructions on obtaining and structuring the credentials needed to connect the Pandas MCP Server in the Vanij Platform.
-
+This document provides instructions on obtaining and structuring the credentials needed to connect the Pandas MCP Server
 ---
 
 ## Credential Format
