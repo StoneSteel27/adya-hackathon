@@ -1,3 +1,4 @@
+```
 # Aiven MCP Server Overview
 
 ## What is the Aiven MCP Server?
@@ -36,3 +37,4 @@ The Aiven MCP Server allows you to interact with the Aiven platform to manage yo
 - Automating the monitoring of your Aiven services.
 - Integrating Aiven project and service information into other systems.
 - Building custom dashboards with Aiven data.
+```
