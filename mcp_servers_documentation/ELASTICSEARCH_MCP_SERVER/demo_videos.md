@@ -1,12 +1,12 @@
 # Elasticsearch MCP Server – Demos and Payload Examples
 
 ## 🎥 Demo Video
-- **MCP server setup explanation + API Execution + Features Testing**: [Watch Here](https://your-demo-video-link.com)
+- **MCP server setup explanation + API Execution + Features Testing**: [Watch Here](https://youtu.be/STonM7ltrpM)
 
 ---
 
 ## 🎥 Credentials Gathering Video
-- **Gathering Credentials & Setup (Full end-to-end video)**: [Watch Here](https://your-credentials-video-link.com)
+- **Gathering Credentials & Setup (Full end-to-end video)**: [Watch Here](https://youtu.be/Yi7XGyQOnoI)
 
 ---
 
