@@ -1,3 +1,20 @@
+"""
+Aiven MCP server.
+
+This server provides tools to interact with the Aiven platform, allowing you to manage
+your Aiven projects and services. The server uses the Aiven API to perform actions
+on your behalf. You need to provide your Aiven API token to use the server.
+
+Supported tools:
+- list_projects: List all projects on your Aiven account.
+- list_services: List all services in a specific Aiven project.
+- get_service_details: Get the details of a service in a specific Aiven project.
+
+Usage examples:
+- To list all projects, use the `list_projects` tool.
+- To list services in a project, use `list_services` with `project_name`.
+- To get service details, use `get_service_details` with `project_name` and `service_name`.
+"""
 import asyncio
 import logging
 from aiven.client import client
@@ -27,25 +44,7 @@ def get_aiven_client(credentials: dict):
     return aiven_client
 
 # Initialize server
-app = Server(
-    "mcp-aiven",
-    description="""
-The Aiven MCP server provides tools to interact with the Aiven platform.
-It allows you to manage your Aiven projects and services.
-The server uses the Aiven API to perform actions on your behalf.
-You need to provide your Aiven API token to use the server.
-The server supports the following tools:
-- list_projects: List all projects on your Aiven account.
-- list_services: List all services in a specific Aiven project.
-- get_service_details: Get the detail of your service in a specific Aiven project.
-""",
-    example="""
-Here are some examples of how to use the Aiven MCP server:
-- To list all projects on your Aiven account, you can use the `list_projects` tool.
-- To list all services in a specific Aiven project, you can use the `list_services` tool with the `project_name` argument.
-- To get the detail of your service in a specific Aiven project, you can use the `get_service_details` tool with the `project_name` and `service_name` arguments.
-"""
-)
+app = Server("mcp-aiven")
 
 @app.list_tools()
 async def list_tools() -> list[Tool]:
