@@ -33,5 +33,15 @@ ServersConfig = [
 			"run",
 			"mcp-elasticsearch"
 		]
+	},
+	{
+		"server_name": "PANDAS_MCP_SERVER",
+		"command": "uv",
+		"args": [
+			"--directory",
+			"../servers/PANDAS_MCP_SERVER/pandas-mcp-server",
+			"run",
+			"pandas-mcp-server"
+		]
 	}
 ]

@@ -387,6 +387,40 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "PANDAS MCP",
+					"item": [
+						{
+							"name": "Non-Stream Api -python",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"selected_server_credentials\": {\n        \"PANDAS_MCP_SERVER\": {\n            \"csv_url\": \"https://www.stats.govt.nz/assets/Uploads/Business-employment-data/Business-employment-data-June-2022-quarter/Download-data/business-employment-data-june-2022-quarter-csv.csv\"\n        }\n    },\n    \"client_details\": {\n        \"api_key\": \"AIzaSyCJJFu0VJ_odeC8i-TVsQLiyg9f0J1xpsw\",\n        \"temperature\": 0.6,\n        \"max_token\": 20000,\n        \"input\": \"run pandas code to get the first 5 rows of the dataframe\",\n        \"input_type\": \"text\",\n        \"prompt\": \"you are a helpful assistant that can run pandas code\",\n        \"chat_model\": \"gemini-2.0-flash\",\n        \"chat_history\": []\n    },\n    \"selected_client\": \"MCP_CLIENT_GEMINI\",\n    \"selected_servers\": [\n        \"PANDAS_MCP_SERVER\"\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev-python-host}}/api/v1/mcp/process_message",
+									"host": [
+										"{{dev-python-host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mcp",
+										"process_message"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}
